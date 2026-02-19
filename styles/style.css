@@ -2,4 +2,120 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-family: var(--main-font-family);
+  font-size: var(--main-text-size);
+  color: var(--text-color);
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: var(--bg-color);
 }
+
+
+/* header */
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr min-content 1fr;
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  min-block-size: 668px;
+  padding: 10px;
+}
+
+.decorated-zone:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  color: var(--accent-color);
+  border-width: 1px 1px 0 0;
+  border-style: solid;
+}
+
+.decorated-zone:after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  color: var(--accent-color);
+  border-width: 0 0 1px 1px;
+  border-style: solid;
+}
+
+.header__decoration-item {
+  display: var(--rec-display);
+  top: 10px;
+  right: 38px;
+  position: absolute;
+  color: var(--accent-color);
+}
+
+.header__decoration-item::after {
+  content: '';
+  top: 8px;
+  left: 44px;
+  width: 9px;
+  height: 9px;
+  color: var(--accent-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 0px 4px 2px var(--accent-color);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.header__theme-menu {
+  align-self: center;
+  justify-self: right;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.header__theme-menu-button {
+  color: var(--accent-color);
+  background-color: inherit;
+  border: none;
+  text-transform: lowercase;
+  padding: 1.5px 13px;
+}
+
+.header__theme-menu-button_type_dark {
+  outline: 1px solid var(--accent-color);
+}
+
+.header__title {
+  font-size: var(--title-size);
+  line-height: 83%;
+  color: var(--title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.header__text {
+  align-self: center;
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+  color: initial;
+  font-weight: 700;
+}
+
+
+/* footer */
+.footer {
+  position: relative;
+  z-index: 1;
+}
+
