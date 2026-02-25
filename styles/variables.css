@@ -15,4 +15,8 @@
   --text-color: #F1B2CE;
   --title-color: #DB00FF;
   --accent-color: #FF0070;
+  --content-page-color: var(--accent-color);
+  --color-title-decor: var(--bg-color);
+  --btn-color:rgba(255, 0, 112, 0.4);
+  --rec-display: inherit;
 }
