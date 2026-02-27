@@ -59,6 +59,7 @@
   right: 38px;
   position: absolute;
   color: var(--accent-color);
+  text-transform: uppercase;
 }
 
 .header__decoration-item::after {
@@ -96,7 +97,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--content-page-color);
+  outline: 1px solid var(--btn-color);
 }
 
 .header__theme-menu-button:focus-visible {
